@@ -1,3 +1,2 @@
-# coupon-ser-koa
+# koa-ts-template
 
-淘宝客 服务端
