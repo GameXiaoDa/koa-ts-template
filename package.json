@@ -1,0 +1,45 @@
+{
+  "name": "material-server",
+  "version": "1.0.0",
+  "description": "图壁制 服务端",
+  "main": "index.js",
+  "dependencies": {
+    "@koa/router": "^10.1.1",
+    "koa": "^2.13.4",
+    "koa-body": "^4.2.0",
+    "log4js": "^6.4.5",
+    "mongoose": "^6.3.0",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@babel/runtime": "^7.17.9",
+    "@types/koa": "^2.13.4",
+    "@types/koa__router": "^8.0.11",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "serve": "cross-env NODE_ENV=development nodemon --exec ts-node --files src/main.ts",
+    "start": "cross-env NODE_ENV=production npx babel ./src --extensions .ts --out-dir dist && node ./dist/main.js",
+    "build": "cross-env NODE_ENV=production npx babel ./src --extensions .ts --out-dir dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaodaweb/material-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaodaweb/material-server/issues"
+  },
+  "homepage": "https://github.com/xiaodaweb/material-server#readme"
+}
